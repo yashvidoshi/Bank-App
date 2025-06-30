@@ -43,7 +43,16 @@ Users can open a **Savings** or **Current** account, and all submitted data is v
     source venv/bin/activate    # For macOS/Linux
     # OR
     venv\Scripts\activate       # For Windows
-  ```
+     ```
+3. Run the Flask app:
+   ```
+   python backend.py
+   ```
+4. Open your browser and go to:
+   ```
+   http://127.0.0.1:5000
+   ```
+
 
   
 
