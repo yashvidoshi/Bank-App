@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Account Created</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .result-box {
+            background: white;
+            padding: 35px 45px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            max-width: 500px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            color: #444;
+            margin: 10px 0;
+        }
+
+        .interest {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #007B7F;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-box">
+        <h2>Account Created</h2>
+        <p><strong>Name:</strong> {{ acc.fn }} {{ acc.ln }}</p>
+        <p><strong>Gender:</strong> {{ acc.gender }}</p>
+        <p><strong>Address:</strong> {{ acc.add }}</p>
+        <p><strong>Account Number:</strong> {{ acc.accno }}</p>
+        <p><strong>Amount:</strong> ₹{{ acc.amount }}</p>
+        <p class="interest"><strong>Interest for {{ months }} months:</strong> ₹{{ interest }}</p>
+    </div>
+</body>
+</html>
